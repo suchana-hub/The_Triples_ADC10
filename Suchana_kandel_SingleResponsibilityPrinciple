@@ -1,0 +1,26 @@
+SINGLE RESPONSIBILITY PRINCIPLE :
+ The single responsibility principle states that a class should have only one reason to change i.e. class should have only one job. The single responsibility principle is closely related to the concepts of coupling and cohesion.
+
+Bad Example: public class Employee{
+string EmployeeName;
+int EmployeeNo;
+public void Insert(Employee e){
+} public void generateReport(Employee e){
+}
+}
+
+
+
+
+Good Example: public class Employee{
+string EmployeeName;
+int EmployeeNo;
+public void Insert(Employee e){
+}
+}
+public class Employee{
+string EmployeeName;
+int EmployeeNo;
+public void GenerateReport(Employee e){
+}
+}
